@@ -1,11 +1,16 @@
-import { USeparatorCircle } from "@components/SeparatorCircle/USeparatorCircle";
+import { VHeader } from "./views/VHeader";
+import { VCyberDays } from "./views/VCyberDays";
+import { VSlider } from "./views/VSlider";
+import { VFooter } from "./views/VFooter";
+
 const HomePage = () => {
   return (
-    <div>
-      Bienvenido a la pagina
-      <br />
-      <USeparatorCircle />
-    </div>
+    <>
+      <VHeader />
+      <VCyberDays />
+      <VSlider />
+      <VFooter />
+    </>
   );
 };
 
