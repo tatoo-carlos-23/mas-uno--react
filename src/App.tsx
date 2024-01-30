@@ -1,10 +1,13 @@
-import React from 'react'; 
-import './App.css';
+import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import RouterIndex from "./core/router/RouterIndex";
 
 function App() {
   return (
     <div className="App">
-      Hola mundo
+      <BrowserRouter>
+        <RouterIndex />
+      </BrowserRouter>
     </div>
   );
 }
