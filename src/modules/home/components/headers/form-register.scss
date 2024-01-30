@@ -1,0 +1,15 @@
+.form-register {
+    background-color: #ffffff;
+    width: 650px;
+    min-width: 650px;
+    box-sizing: border-box;
+    border-radius: 32px;
+    height: 599px;
+    position: relative;
+
+    &__cyber-days-sello {
+        position: absolute;
+        top: -48px;
+        right: -12px;
+    }
+}
