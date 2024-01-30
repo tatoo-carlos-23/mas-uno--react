@@ -1,0 +1,25 @@
+.u-button {
+    border: 0;
+    outline: none;
+    border-radius: 6px;
+    height: 56px;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 21.79px;
+    font-weight: 700;
+    box-sizing: border-box;
+
+    &__disabled {
+        background-color: #E3E3E3;
+    }
+
+    &__enabled {
+        background-color: #1A36A8;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

@@ -1,7 +1,7 @@
-import { VHeader } from "./views/VHeader";
-import { VCyberDays } from "./views/VCyberDays";
-import { VSlider } from "./views/VSlider";
-import { VFooter } from "./views/VFooter";
+import { VHeader } from "./views/header/VHeader";
+import { VCyberDays } from "./views/cyber-day/VCyberDays";
+import { VSlider } from "./views/slider/VSlider";
+import { VFooter } from "./views/footer/VFooter";
 
 const HomePage = () => {
   return (
