@@ -1,3 +1,5 @@
 :root {
     --mu-color-primary: #1A36A8;
 }
+
+@import "./styles/style.css";
