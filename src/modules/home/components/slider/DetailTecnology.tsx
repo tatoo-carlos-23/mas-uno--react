@@ -46,7 +46,7 @@ export const DetailTecnology = (props: ITecnologySelected) => {
               key={index + 1}
               style={{
                 backgroundColor:
-                  res.id === props.activeId ? "#1A36A8" : "#E3E3E3",
+                  res.id === props.activeId ? "var(--mu-color-primary)" : "#E3E3E3",
               }}
               className="detail-tecnology__items__item"
             ></div>
