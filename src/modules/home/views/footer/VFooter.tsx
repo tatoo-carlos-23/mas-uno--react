@@ -1,3 +1,10 @@
 export const VFooter = () => {
-  return <div>VFooter</div>;
+  return (
+    <div>
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
+  );
 };

@@ -1,0 +1,46 @@
+.detail-tecnology {
+    height: 590px;
+    min-height: 590px;
+    max-height: 590px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0 100px;
+    box-sizing: border-box; 
+
+    &__tecnology {
+        color: #D43E36;
+        font-size: 32px;
+        line-height: 43px;
+        font-weight: 700;
+    }
+
+    &__description {
+        color: #2E2E2E;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: row;
+        column-gap: 5px;
+        margin-bottom: 20px;
+
+        &__item {
+            border-radius: 50%;
+            height: 18px;
+            width: 18px;
+        }
+
+        &__item-active {
+            background-color: #1A36A8;
+        }
+
+        &__item-inactive {
+            background-color: #E3E3E3;
+        }
+    }
+}
