@@ -5,7 +5,7 @@ export const UButton = (props: IUButtonProps) => {
   /**
    * Metodo para emitir click
    * @description Solo hara click cuando la propiedad disabled sea diferente de true
-  */
+   */
   const changeButton = () => {
     if (!props.disabled) {
       props.changeButton();
@@ -14,6 +14,7 @@ export const UButton = (props: IUButtonProps) => {
 
   return (
     <button
+      style={{ width: props.width ? props.width : "100%" }}
       className={_class(props.disabled)}
       onClick={() => changeButton()}
       disabled={props.disabled}

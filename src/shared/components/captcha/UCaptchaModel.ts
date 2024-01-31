@@ -1,4 +1,4 @@
-export interface IUInputProps {
+export interface IUCaptchaProps {
     label: string;
     required?: boolean;
     value: string;

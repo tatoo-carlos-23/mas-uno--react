@@ -1,0 +1,102 @@
+.u-captcha {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+
+    &__captcha {
+        position: absolute;
+        background-color: #ffffff;
+        border-radius: 5px;
+        border: 1px solid #1A36A8;
+        bottom: 48px;
+        right: 0px;
+        padding: 3px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        min-height: 40px;
+        align-items: center; 
+        width: 215px;
+        max-width: 215px;
+        min-width: 215px;
+
+        &__btn-reload {
+            cursor: pointer;
+            background-color: #1A36A8;
+            border-radius: 5px;
+            width: 35px; 
+            height: 35px;
+            max-width: 35px; 
+            max-height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+        }
+    }
+
+    &__captcha__triangle {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        min-width: 10px;
+        min-height: 10px;
+        max-width: 10px;
+        max-height: 10px;
+        background-image:
+            linear-gradient(to bottom right, transparent 50%, #1A36A8 0),
+            linear-gradient(to top right, #1A36A8 50%, transparent 0);
+        background-size: 50% 100%;
+        background-repeat: no-repeat;
+        background-position: left, right;
+        transform: rotate(180deg);
+        bottom: 38px;
+        right: 30px;
+    }
+
+    &__label {
+        color: #B7B1A9;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 5px;
+
+        &__required {
+            &:after {
+                color: #C12A21;
+                content: '*';
+                position: absolute;
+                transform: translate(-100%, 0);
+            }
+        }
+
+        &__no_required {
+            &:after {
+                color: #ffffff;
+                content: '*';
+                position: absolute;
+                transform: translate(-100%, 0);
+            }
+        }
+    }
+
+    &__input {
+        border: none;
+        outline: none;
+        border: 1px solid #B7B1A9;
+        border-radius: 6px;
+        height: 38px;
+        padding: 8px 16px 8px 16px;
+        box-sizing: border-box;
+        color: #B7B1A9;
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 400;
+        width: 100%;
+
+        &__active {
+            color: #1A36A8;
+            border: 1px solid #1A36A8;
+        }
+    }
+}
