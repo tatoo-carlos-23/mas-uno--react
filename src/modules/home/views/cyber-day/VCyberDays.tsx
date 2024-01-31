@@ -31,13 +31,15 @@ export const VCyberDays = () => {
       <div className="cyber-days__separator-first">
         <USeparatorCircle />
       </div>
-      <div  className="cyber-days__logo-mas-uno">
+      <div className="cyber-days__logo-mas-uno">
         <img src={logofirst} alt="logo-mas-uno" />
       </div>
       <div className="cyber-days__question">
-      Las mejores tecnologias de Más uno
+        Las mejores tecnologias de Más uno
         <img src={underline} alt="" />
       </div>
+      <br />
+      <br />
     </div>
   );
 };
