@@ -1,8 +1,9 @@
 import { USeparatorCircle } from "@components/separator-circle/USeparatorCircle";
 import { UCircleDescriptionStep } from "@components/circle-description-step/UCircleDescriptionStep";
 import underline from "@img/underline-register-get.png";
-import "./cyber-day.scss";
+import logofirst from "@img/logo-mas-uno.png";
 import { listSteps } from "../../helpers/mock-list-step.helper";
+import "./cyber-day.scss";
 
 export const VCyberDays = () => {
   return (
@@ -29,6 +30,13 @@ export const VCyberDays = () => {
       </div>
       <div className="cyber-days__separator-first">
         <USeparatorCircle />
+      </div>
+      <div  className="cyber-days__logo-mas-uno">
+        <img src={logofirst} alt="logo-mas-uno" />
+      </div>
+      <div className="cyber-days__question">
+      Las mejores tecnologias de Más uno
+        <img src={underline} alt="" />
       </div>
     </div>
   );
