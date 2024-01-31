@@ -20,8 +20,9 @@ export const VCyberDays = () => {
         sigue los siguientes pasos
       </div>
       <div className="cyber-days__steps">
-        {listSteps.map((res) => (
+        {listSteps.map((res, index) => (
           <UCircleDescriptionStep
+            key={index}
             step={res.step}
             title={res.title}
             description={res.description}

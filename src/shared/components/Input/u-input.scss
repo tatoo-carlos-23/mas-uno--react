@@ -43,8 +43,8 @@
         width: 100%;
 
         &__active {
-            color: #1A36A8;
-            border: 1px solid #1A36A8;
+            color: var(--mu-color-primary);
+            border: 1px solid var(--mu-color-primary);
         }
     }
 }

@@ -1,14 +1,18 @@
+import { useState } from "react";
+
 import { UInput } from "@components/input/UInput";
 import { USelect } from "@components/select/USelect";
 import { UCaptcha } from "@components/captcha/UCaptcha";
-
-import "./form-register.scss";
-import cyberDay from "@img/cyber-days-sello-empresa-certificada-2022.png";
-import completeInfo from "@img/undelined-complete-info.png";
-import { useState } from "react";
-import { IUser } from "../../interfaces/user.interface";
 import { UCheckBox } from "@components/checkbox/UCheckBox";
 import { UButton } from "@components/button/UButton";
+
+import cyberDay from "@img/cyber-days-sello-empresa-certificada-2022.png";
+import completeInfo from "@img/undelined-complete-info.png";
+
+import { IUser } from "../../interfaces/user.interface";
+
+import "./form-register.scss";
+
 
 const FormRegister = () => {
   const [form, setForm] = useState<IUser>({

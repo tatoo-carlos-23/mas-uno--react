@@ -10,7 +10,7 @@
         font-weight: 700;
         font-size: 32px;
         line-height: 43px;
-        color: #1A36A8;
+        color: var(--mu-color-primary);
     }
 
     &__logo {
@@ -25,7 +25,7 @@
         align-items: center;
         border: 5px solid #BBBBBB;
         border-radius: 50%;
-        background-color: #1A36A8;
+        background-color: var(--mu-color-primary);
         margin-top: 20px;
         margin-bottom: 25px;
 
