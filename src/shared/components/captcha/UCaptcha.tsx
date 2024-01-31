@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import { IUInputProps } from "./UInputModel";
-import "./u-input.scss";
+import { IUCaptchaProps } from "./UCaptchaModel";
+import imgCaptcha from "@img/captcha01.png";
+import "./u-captcha.scss";
 
-export const UInput = (props: IUInputProps) => {
+export const UCaptcha = (props: IUCaptchaProps) => {
   const [isFocus, setOnFocus] = useState<boolean>(false);
   const [value, setValue] = useState<string>("");
 
@@ -20,7 +21,7 @@ export const UInput = (props: IUInputProps) => {
   };
 
   return (
-    <div className="u-input">
+    <div className="u-captcha">
       <span className={_classLabel(props.required)}>{props.label} *</span>
       <input
         onFocus={() => setOnFocus(true)}
@@ -31,17 +32,33 @@ export const UInput = (props: IUInputProps) => {
         value={value}
         placeholder={props.placeholder}
       />
+      {isFocus && (
+        <div className="u-captcha__captcha">
+          <img src={imgCaptcha} height={50} alt="captcha01" />
+          <div className="u-captcha__captcha__btn-reload">
+            <span
+              style={{ color: "#ffffff" }}
+              className="material-symbols-outlined"
+            >
+              refresh
+            </span>
+          </div>
+        </div>
+      )}
+      {isFocus && <div className="u-captcha__captcha__triangle"></div>}
     </div>
   );
 };
 
 const _classLabel = (required?: boolean): string => {
   return [
-    "u-input__label",
-    required ? "u-input__label__required" : "u-input__label__no_required",
+    "u-captcha__label",
+    required ? "u-captcha__label__required" : "u-captcha__label__no_required",
   ].join(" ");
 };
 
 const _classInput = (isFocus: boolean): string => {
-  return ["u-input__input", isFocus ? "u-input__input__active" : ""].join(" ");
+  return ["u-captcha__input", isFocus ? "u-captcha__input__active" : ""].join(
+    " "
+  );
 };
