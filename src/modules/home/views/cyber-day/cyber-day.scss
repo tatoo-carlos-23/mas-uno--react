@@ -1,0 +1,49 @@
+.cyber-days {
+    &__separator-first {
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+        margin-top: 50px;
+    }
+
+    &__question {
+        display: flex;
+        min-height: 40px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 43px;
+        color: #1A36A8;
+        margin-top: 60px;
+
+        img {
+            margin-top: 10px;
+        }
+    }
+
+    &__description {
+        text-align: center;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 600;
+        color: #B7B1A9;
+        margin-top: 30px;
+        margin-bottom: 50px;
+
+        span {
+            font-weight: 700;
+            color: #D43E36;
+        }
+    }
+
+    &__steps {
+        min-height: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+}

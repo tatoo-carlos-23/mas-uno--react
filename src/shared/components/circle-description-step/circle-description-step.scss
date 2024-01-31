@@ -1,0 +1,45 @@
+.u-circle-desstep {
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 280px;
+
+    &__step {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 43px;
+        color: #1A36A8;
+    }
+
+    &__logo {
+        height: 244px;
+        width: 244px;
+        max-height: 244px;
+        max-width: 244px;
+        min-height: 244px;
+        min-width: 244px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid #BBBBBB;
+        border-radius: 50%;
+        background-color: #1A36A8;
+        margin-top: 20px;
+        margin-bottom: 25px;
+
+        img {
+            height: 132px;
+        }
+    }
+
+    &__description {
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        color: #595959;
+        text-align: center;
+    }
+}
